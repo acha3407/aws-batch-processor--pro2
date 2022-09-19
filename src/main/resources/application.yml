@@ -1,0 +1,18 @@
+cdp:
+  serviceName: "cdp"
+  process: "BatchApiData"
+  encryption:
+    amperity:
+      publicKeyBucket: ${AMPERITY_PUBLIC_KEY_BUCKET}
+      publicKeyPath: ${AMPERITY_PUBLIC_KEY_PATH}
+    sysco:
+      publicKeyBucket: ${SYSCO_PUBLIC_KEY_BUCKET}
+      publicKeyPath: ${SYSCO_PUBLIC_KEY_PATH}
+  upload:
+    amperity:
+      destinationBucket: ${AMPERITY_DESTINATION_BUCKET}
+    sysco:
+      destinationBucket: ${SYSCO_DESTINATION_BUCKET}
+  audit:
+    tableName: ${AUDIT_TABLE}
+
