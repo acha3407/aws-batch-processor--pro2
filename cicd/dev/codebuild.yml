@@ -4,7 +4,7 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - start building project 2
+      - echo start building project 2
       - echo docker login
       - docker login -u="${DOCKER_USERNAME}" -p="${DOCKER_PASSWORD}"
       # - echo Logging in to Amazon ECR...
@@ -25,4 +25,4 @@ phases:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
       - docker push ashan97/multi-build-pro2:v0.01
-      - complete building project 2
+      - echomcomplete building project 2
